@@ -11,7 +11,7 @@ def prettyPrintCouple(expr):
     B = eval(expr)
     prettyPrint(expr, '(' + str(B[0]) + ', ' + str(B[1]) + ')')
     return B
-    
+
 def checkEqualty(expr):
     X = prettyPrintCouple(expr)
     print(' -- ', X[0] == X[1].value)
@@ -41,6 +41,8 @@ def main():
     b2 = eval((S := 'fntF(156.21, APFixed, 12, None)'))
     prettyPrintCouple(S)
 
+    print(repr(a0[1]))
+
     A = [a0, a1, a2]
     B = [b0, b1, b2]
 
@@ -49,7 +51,8 @@ def main():
 
     vec = []
     for a,b,o in cartesian(A, B,["'+'", "'-'", "'*'"]):
-        S = f"fun({a}, {b}, {o})"
+
+        S = f"fun({a}, {b}, {o})".replace('Signed', 'APFixed').replace('Unsigned', 'APUfixed')
         try:
             vec.append(prettyPrintCouple(S))
         except Exception:

@@ -4,5 +4,9 @@
 
 __all__ = [ "APFixed", "APUfixed" ]
 
+
+from .APFixedBase import Base
+from .APFixed import Signed
 from .APFixed import Signed as APFixed
+from .APUfixed import Unsigned
 from .APUfixed import Unsigned as APUfixed

@@ -1,4 +1,6 @@
 from __future__ import annotations
+import abc
+import numpy
 
 from .. import real
 
@@ -168,25 +170,25 @@ class Base:
         Raises:
             ValueError: the type for value is not supported
         """
-        real, imag = 0.0, 0.0
+        re, im = 0.0, 0.0
         argumentError = ValueError("val can either be a complex value, a real value or a (real, imag) couple")
         if isinstance(val, (Base, complex, numpy.complexfloating)):
-            real, imag = val.real, val.imag
+            re, im = val.real, val.imag
         elif isinstance(val, (tuple, list, numpy.ndarray)):
             lenval = len(val)
             if any(numpy.iscomplex(val)) or any([isinstance(x, Base) for x in val]) or (lenval not in (1, 2)):
                 raise argumentError
             if lenval == 1:
-                real = val[0]
+                re = val[0]
             else: # lenval == 2
-                (real, imag) = val
+                (re, imag) = val
         elif isinstance(val, real.Base) or numpy.isreal(val):
-            real =  val
+            re =  val
         else:
             raise argumentError
         rootClass = real.Signed if type(self)._signed() else real.Unsigned
-        re = rootClass(real, bitW, bitI)
-        im = rootClass(imag, bitW, bitI)
+        re = rootClass(re, bitW, bitI)
+        im = rootClass(im, bitW, bitI)
         localQ = max(re.bitQ, im.bitQ)
         localI = max(re.bitI, im.bitI)
         localW = localI + localQ

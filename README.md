@@ -2,7 +2,11 @@
 
 ## Installation
 
-Currently, only direct usage is supported. So, to use the module, clone the repository somewhere, create a symbolic link to this repository [aptypes](./aptypes) in your PYTHON_PATH, and just `import aptypes` or `from aptypes import *`.
+Clone the repository (`git clone https://github.com/DrasLorus/aptypes-python.git`).
+In the `aptypes-python` directory created, run `python -m pip install --upgrade build`, followed by `python -m build`.
+It should create a `dist` directory, containing an `aptypes-VERSION-py3-none-any.whl`, with `VERSION` a commit-ish value.
+
+Now, you can run `python -m pip install path/to/dist/aptypes-VERSION-py3-none-any.whl` (or `python -m pip install path\to\dist\aptypes-VERSION-py3-none-any.whl` on Windows) in any virtual environment.
 
 ## License
 

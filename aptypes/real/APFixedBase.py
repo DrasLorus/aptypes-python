@@ -2,7 +2,7 @@ from __future__ import annotations
 import abc
 import numpy
 
-class APFixedBase(abc.ABC):
+class Base(abc.ABC):
     """Core interface to handle fixed-point arbitrary-precision numbers
 
     """
@@ -246,17 +246,17 @@ class APFixedBase(abc.ABC):
             str_sign = ' signed' if signed else 'n unsigned'
             raise ValueError(f"A{str_sign} of {bitW} bits cannot hold the value {V}")
 
-    def __init__(self, val: float | str | int | APFixedBase, 
+    def __init__(self, val: float | str | int | Base, 
                  bitW: int = None, bitI: int = None,
                  **kwargs):
-        """APFixedBase constructor
+        """Base constructor
 
         Args:
             val (any): The initial value. If its type is:
                 - float or numpy.floating, it is interpreted as a floating-point value to approximate. When bitW or bitI are None, they are estimated using the dedicated method.
                 - str, it is interpreted as a binary value to be set as-is. If bitW is None, it is set to the length of val. bitI is required.
                 - int or numpy.integer, it is interpreted as a raw value to be set as-is. If bitW is None, it is estimated using the dedicated method. bitI is required.
-                - APFixedBase or subclasses, its raw value is copied. When bitW or bitI are None, their value is also copied.
+                - Base or subclasses, its raw value is copied. When bitW or bitI are None, their value is also copied.
                 - any other type, a NotImplementedError is raised.
             bitW (int, optional): requested bit length, see val for details. Defaults to None.
             bitI (int, optional): requested number of integer bits, see val for details. Defaults to None.
@@ -284,7 +284,7 @@ class APFixedBase(abc.ABC):
             bitQ   = self._estimateQWidth(bitI, bitW)
             ispos = val[0] == '0'
             V     = int(val, 2) if (ispos or not self.signed) else int(val[1:], 2) - int('1' + '0'*(bitW - 1), 2)
-        elif issubclass(val.__class__, APFixedBase):
+        elif issubclass(val.__class__, Base):
             if bitW is None:
                 bitW = val.bitW
             if bitI is None:
@@ -299,16 +299,16 @@ class APFixedBase(abc.ABC):
                 bitW = self._estimateWidth(bitI, bitQ)
             V   = int(val)
         else:
-            raise NotImplementedError('Currently supported type: float, numpy.floating, int, str and APFixedBase')
+            raise NotImplementedError('Currently supported type: float, numpy.floating, int, str and Base')
         self._validateValue(V, bitW, int(self.signed))
         self.__V   = V
         self.__bitW = bitW
         self.__bitI = bitI
         self.__bitQ = bitQ
 
-    def __add__(self, val: float | str | int | APFixedBase, 
-                bitW: int = None, bitI: int = None) -> APFixedBase:
-        if isinstance(val, APFixedBase):
+    def __add__(self, val: float | str | int | Base, 
+                bitW: int = None, bitI: int = None) -> Base:
+        if isinstance(val, Base):
             local = val
         else:
             local = self.__class__(val, bitW, bitI)
@@ -326,13 +326,13 @@ class APFixedBase(abc.ABC):
             localV = self.raw + local.raw 
         return self.__class__(localV, localW, localI)
     
-    def bitstrainedAdd(self, val: float | str | int | APFixedBase, 
+    def bitstrainedAdd(self, val: float | str | int | Base, 
                        bitW: int , bitI: int = None):
         return self.__add__(val, bitW, bitI)
 
-    def __sub__(self, val: float | str | int | APFixedBase, 
-                bitW: int = None, bitI: int = None) -> APFixedBase:
-        if isinstance(val, APFixedBase):
+    def __sub__(self, val: float | str | int | Base, 
+                bitW: int = None, bitI: int = None) -> Base:
+        if isinstance(val, Base):
             local = val
         else:
             local = self.__class__(val, bitW, bitI)
@@ -350,13 +350,13 @@ class APFixedBase(abc.ABC):
             localV = self.raw - local.raw 
         return self.__class__(localV, localW, localI)
 
-    def bitstrainedSub(self, val: float | str | int | APFixedBase, 
+    def bitstrainedSub(self, val: float | str | int | Base, 
                        bitW: int, bitI: int = None):
         return self.__sub__(val, bitW, bitI)
 
-    def __mul__(self, val: float | str | int | APFixedBase,
-                bitW: int = None, bitI: int = None) -> APFixedBase:
-        if isinstance(val, APFixedBase):
+    def __mul__(self, val: float | str | int | Base,
+                bitW: int = None, bitI: int = None) -> Base:
+        if isinstance(val, Base):
             local = val
         else:
             local = self.__class__(val, bitW, bitI)
@@ -370,38 +370,38 @@ class APFixedBase(abc.ABC):
         localV = self.raw * local.raw
         return self.__class__(val=localV, bitW=localW, bitI=localI)
 
-    def bitstrainedMul(self, val: float | str | int | APFixedBase,
+    def bitstrainedMul(self, val: float | str | int | Base,
                        bitW: int, bitI: int = None):
         return self.__mul__(val, bitW, bitI)
 
-    def __neg__(self) -> APFixedBase:
+    def __neg__(self) -> Base:
         return self.__class__(-self.raw, self.__bitW + 1, self.bitI + 1)
 
-    def __lt__(self, val: APFixedBase, bitW: int = None, bitI: int = None) -> bool:
-        if isinstance(val, APFixedBase):
+    def __lt__(self, val: Base, bitW: int = None, bitI: int = None) -> bool:
+        if isinstance(val, Base):
             local = val
         else:
             local = self.__class__(val, bitW, bitI)
         scale = 2**(self.bitQ - local.bitQ) if self.scaling == 'internal' else 1
         return self.raw < local.raw * scale
     
-    def __gt__(self, val: APFixedBase, bitW: int = None, bitI: int = None) -> bool:
-        if isinstance(val, APFixedBase):
+    def __gt__(self, val: Base, bitW: int = None, bitI: int = None) -> bool:
+        if isinstance(val, Base):
             local = val
         else:
             local = self.__class__(val, bitW, bitI)
         scale = 2**(self.bitQ - local.bitQ) if self.scaling == 'internal' else 1
         return self.raw > local.raw * scale
 
-    def __eq__(self, val: APFixedBase) -> bool:
-        if isinstance(val, APFixedBase):
+    def __eq__(self, val: Base) -> bool:
+        if isinstance(val, Base):
             local = val
         else:
             local = self.__class__(val)
         scale = 2.**(self.bitQ - local.bitQ) if self.scaling == 'internal' else 1
         return self.raw == local.raw * scale
 
-    def truncate(self, bits: int, lsb: bool = True) -> APFixedBase:
+    def truncate(self, bits: int, lsb: bool = True) -> Base:
         """Truncate arbitrary number of MSBs or LSBs 
 
         Args:
@@ -412,7 +412,7 @@ class APFixedBase(abc.ABC):
             ValueError: bits is negative, and negative truncation are not defined.
 
         Returns:
-            APFixedBase: A new APFixedBase with bits truncated and values adjusted accordingly
+            Base: A new Base with bits truncated and values adjusted accordingly
         """
         if bits < 0:
             raise ValueError('Negative truncation are not defined.')
@@ -426,7 +426,7 @@ class APFixedBase(abc.ABC):
                 self.bitI - bits)
 
 
-    def pad(self, bits: int, lsb: bool = True) -> APFixedBase:
+    def pad(self, bits: int, lsb: bool = True) -> Base:
         """Pad arbitrary bits without affecting the value
 
         Args:
@@ -434,7 +434,7 @@ class APFixedBase(abc.ABC):
             lsb (bool, optional): pad least-significant (right-most in binary rep.) bits. Defaults to True.
 
         Returns:
-            APFixedBase: depending of the sign and of lsb, a zero- or one-padded version of the object
+            Base: depending of the sign and of lsb, a zero- or one-padded version of the object
         """
         if lsb:
             return self.__class__(
@@ -456,14 +456,14 @@ class APFixedBase(abc.ABC):
     def _saturateLow(cls, val, bitW) -> int:
         return int(max(val, cls._minRawValue(bitW)))
 
-    def saturate(self, bits: int) -> APFixedBase:
+    def saturate(self, bits: int) -> Base:
         """Truncate most-significant bits while saturating the value  
 
         Args:
             bits (int): MSB to be truncated
 
         Returns:
-            APFixedBase: a trucated version of the object, saturated if the value exceeded the one achievable after truncation.
+            Base: a trucated version of the object, saturated if the value exceeded the one achievable after truncation.
         """
         localW = self.bitW - bits
         localI = self.bitI - bits

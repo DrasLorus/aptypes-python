@@ -181,16 +181,16 @@ class Base:
             if lenval == 1:
                 re = val[0]
             else: # lenval == 2
-                (re, imag) = val
+                re, im = val
         elif isinstance(val, real.Base) or numpy.isreal(val):
-            re =  val
+            re = val
         else:
             raise argumentError
         rootClass = real.Signed if type(self)._signed() else real.Unsigned
-        re = rootClass(re, bitW, bitI)
-        im = rootClass(im, bitW, bitI)
-        localQ = max(re.bitQ, im.bitQ)
-        localI = max(re.bitI, im.bitI)
+        apre = rootClass(re, bitW, bitI)
+        apim = rootClass(im, bitW, bitI)
+        localQ = max(apre.bitQ, apim.bitQ)
+        localI = max(apre.bitI, apim.bitI)
         localW = localI + localQ
         self.__re = rootClass(re, localW, localI)
         self.__im = rootClass(im, localW, localI)

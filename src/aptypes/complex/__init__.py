@@ -2,10 +2,10 @@
 
 """
 
-__all__ = [ "APComplex", "APUcomplex" ]
+__all__ = [ "ap_complex", "ap_ucomplex" ]
 
-from .APComplexBase import Base
-from .APComplex import Signed 
-from .APComplex import Signed as APComplex
-from .APUcomplex import Unsigned
-from .APUcomplex import Unsigned as APUcomplex
+from .ap_complex_base import Base
+from .ap_complex import Signed 
+from .ap_complex import Signed as APComplex
+from .ap_ucomplex import Unsigned
+from .ap_ucomplex import Unsigned as APUcomplex

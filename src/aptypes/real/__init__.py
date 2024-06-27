@@ -2,11 +2,13 @@
 
 """
 
-__all__ = [ "APFixed", "APUfixed" ]
+__all__ = [ "ap_fixed", "ap_ufixed" ]
 
 
-from .APFixedBase import Base
-from .APFixed import Signed
-from .APFixed import Signed as APFixed
-from .APUfixed import Unsigned
-from .APUfixed import Unsigned as APUfixed
+from .ap_fixed_base import Base
+from .ap_fixed import Signed
+from .ap_ufixed import Unsigned
+
+# Some aliases
+APFixed = Signed
+APUfixed = Unsigned

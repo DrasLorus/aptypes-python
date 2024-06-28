@@ -1,0 +1,438 @@
+tuple_auto_bits(562.4, APFixed) : (562.4, 562.3999996185303 32[S11])
+tuple_auto_bits(562.4, APUfixed) : (562.4, 562.3999998569489 32[U10])
+tuple_former(156.21, APUfixed, 12, None) : (156.21, 156.1875 12[U8])
+tuple_auto_bits(-89., APFixed) : (-89.0, -89.0 32[S8])
+tuple_auto_bits(-9.9654, APFixed) : (-9.9654, -9.965399995446205 32[S5])
+tuple_former(156.21, APFixed, 12, None) : (156.21, 156.125 12[S9])
+Signed(value=1179438284,bit_width=32,bit_int=11)
+auto_eval_tuple((562.4, APFixed(value=1179438284,bit_width=32,bit_int=11)), (-89.0, APFixed(value=-1493172224,bit_width=32,bit_int=8)), '+') : (473.4, 473.3999996185303 36[S12])
+auto_eval_tuple((562.4, APFixed(value=1179438284,bit_width=32,bit_int=11)), (-89.0, APFixed(value=-1493172224,bit_width=32,bit_int=8)), '-') : (651.4, 651.3999996185303 36[S12])
+auto_eval_tuple((562.4, APFixed(value=1179438284,bit_width=32,bit_int=11)), (-89.0, APFixed(value=-1493172224,bit_width=32,bit_int=8)), '*') : (-50053.6, -50053.599966049194 64[S19])
+auto_eval_tuple((562.4, APFixed(value=1179438284,bit_width=32,bit_int=11)), (-9.9654, APFixed(value=-1337533346,bit_width=32,bit_int=5)), '+') : (552.4345999999999, 552.4345996230841 39[S12])
+auto_eval_tuple((562.4, APFixed(value=1179438284,bit_width=32,bit_int=11)), (-9.9654, APFixed(value=-1337533346,bit_width=32,bit_int=5)), '-') : (572.3654, 572.3653996139765 39[S12])
+auto_eval_tuple((562.4, APFixed(value=1179438284,bit_width=32,bit_int=11)), (-9.9654, APFixed(value=-1337533346,bit_width=32,bit_int=5)), '*') : (-5604.54096, -5604.540953637447 64[S16])
+auto_eval_tuple((562.4, APFixed(value=1179438284,bit_width=32,bit_int=11)), (156.21, APFixed(value=1249,bit_width=12,bit_int=9)), '+') : (718.61, 718.5249996185303 33[S12])
+auto_eval_tuple((562.4, APFixed(value=1179438284,bit_width=32,bit_int=11)), (156.21, APFixed(value=1249,bit_width=12,bit_int=9)), '-') : (406.18999999999994, 406.2749996185303 33[S12])
+auto_eval_tuple((562.4, APFixed(value=1179438284,bit_width=32,bit_int=11)), (156.21, APFixed(value=1249,bit_width=12,bit_int=9)), '*') : (87852.504, 87804.69994044304 44[S20])
+auto_eval_tuple((562.4, APUfixed(value=2358876569,bit_width=32,bit_int=10)), (-89.0, APFixed(value=-1493172224,bit_width=32,bit_int=8)), '+') : (473.4, 473.39999985694885 35[U11])
+auto_eval_tuple((562.4, APUfixed(value=2358876569,bit_width=32,bit_int=10)), (-89.0, APFixed(value=-1493172224,bit_width=32,bit_int=8)), '-') : (651.4, 651.3999998569489 35[U11])
+auto_eval_tuple((562.4, APUfixed(value=2358876569,bit_width=32,bit_int=10)), (-89.0, APFixed(value=-1493172224,bit_width=32,bit_int=8)), '*') => Error
+auto_eval_tuple((562.4, APUfixed(value=2358876569,bit_width=32,bit_int=10)), (-9.9654, APFixed(value=-1337533346,bit_width=32,bit_int=5)), '+') : (552.4345999999999, 552.4345998615026 38[U11])
+auto_eval_tuple((562.4, APUfixed(value=2358876569,bit_width=32,bit_int=10)), (-9.9654, APFixed(value=-1337533346,bit_width=32,bit_int=5)), '-') : (572.3654, 572.3653998523951 38[U11])
+auto_eval_tuple((562.4, APUfixed(value=2358876569,bit_width=32,bit_int=10)), (-9.9654, APFixed(value=-1337533346,bit_width=32,bit_int=5)), '*') => Error
+auto_eval_tuple((562.4, APUfixed(value=2358876569,bit_width=32,bit_int=10)), (156.21, APFixed(value=1249,bit_width=12,bit_int=9)), '+') : (718.61, 718.5249998569489 33[U11])
+auto_eval_tuple((562.4, APUfixed(value=2358876569,bit_width=32,bit_int=10)), (156.21, APFixed(value=1249,bit_width=12,bit_int=9)), '-') : (406.18999999999994, 406.27499985694885 33[U11])
+auto_eval_tuple((562.4, APUfixed(value=2358876569,bit_width=32,bit_int=10)), (156.21, APFixed(value=1249,bit_width=12,bit_int=9)), '*') : (87852.504, 87804.69997766614 44[U19])
+auto_eval_tuple((156.21, APUfixed(value=2499,bit_width=12,bit_int=8)), (-89.0, APFixed(value=-1493172224,bit_width=32,bit_int=8)), '+') : (67.21000000000001, 67.1875 33[U9])
+auto_eval_tuple((156.21, APUfixed(value=2499,bit_width=12,bit_int=8)), (-89.0, APFixed(value=-1493172224,bit_width=32,bit_int=8)), '-') : (245.21, 245.1875 33[U9])
+auto_eval_tuple((156.21, APUfixed(value=2499,bit_width=12,bit_int=8)), (-89.0, APFixed(value=-1493172224,bit_width=32,bit_int=8)), '*') => Error
+auto_eval_tuple((156.21, APUfixed(value=2499,bit_width=12,bit_int=8)), (-9.9654, APFixed(value=-1337533346,bit_width=32,bit_int=5)), '+') : (146.24460000000002, 146.2221000045538 36[U9])
+auto_eval_tuple((156.21, APUfixed(value=2499,bit_width=12,bit_int=8)), (-9.9654, APFixed(value=-1337533346,bit_width=32,bit_int=5)), '-') : (166.1754, 166.1528999954462 36[U9])
+auto_eval_tuple((156.21, APUfixed(value=2499,bit_width=12,bit_int=8)), (-9.9654, APFixed(value=-1337533346,bit_width=32,bit_int=5)), '*') => Error
+auto_eval_tuple((156.21, APUfixed(value=2499,bit_width=12,bit_int=8)), (156.21, APFixed(value=1249,bit_width=12,bit_int=9)), '+') : (312.42, 312.3125 14[U10])
+auto_eval_tuple((156.21, APUfixed(value=2499,bit_width=12,bit_int=8)), (156.21, APFixed(value=1249,bit_width=12,bit_int=9)), '-') : (0.0, 0.0625 14[U10])
+auto_eval_tuple((156.21, APUfixed(value=2499,bit_width=12,bit_int=8)), (156.21, APFixed(value=1249,bit_width=12,bit_int=9)), '*') : (24401.564100000003, 24384.7734375 24[U17])
+-2.0 : 10
+473.3999996185303 : 000111011001011001100110011001100000
+-9.965399995446205 : 10110000010001101101110001011110
+ValueError successfully detected
+APUfixed(vec[8][1].truncate(18)).truncate(3, lsb=False) : 87804.6875 23[U17]
+NotImplementedError successfully detected
+e1 = vec[8][1].truncate(18).saturate(14) : 31.984375 12[S6]
+APUfixed(e1).saturate(1) : 31.984375 11[U5]
+tuple_auto_bits(-1. + 56.j, APComplex) : ((-1+56j), Signed(value=(-1073741824, 60129542144),bit_width=37,bit_int=7))
+tuple_auto_bits((-1., 56.), APComplex) : ((-1.0, 56.0), Signed(value=(-1073741824, 60129542144),bit_width=37,bit_int=7))
+(-0.5 * -10.0, APFixed(-0.5, 4, 3) * APFixed(-10.0, 5, 5)) : (5.0, 5.0 9[S8])
+ --  True
+(2.0 * -15.0, APFixed(2.0, 4, 3) * APFixed(-15.0, 5, 5)) : (-30.0, -30.0 9[S8])
+ --  True
+(-1.5 * 4.0, APFixed(-1.5, 4, 3) * APFixed(4.0, 5, 5)) : (-6.0, -6.0 9[S8])
+ --  True
+(1.0 * 7.0, APFixed(1.0, 4, 3) * APFixed(7.0, 5, 5)) : (7.0, 7.0 9[S8])
+ --  True
+(-1.5 * -4.0, APFixed(-1.5, 4, 3) * APFixed(-4.0, 5, 5)) : (6.0, 6.0 9[S8])
+ --  True
+(3.5 * 13.0, APFixed(3.5, 4, 3) * APFixed(13.0, 5, 5)) : (45.5, 45.5 9[S8])
+ --  True
+(-0.5 * -13.0, APFixed(-0.5, 4, 3) * APFixed(-13.0, 5, 5)) : (6.5, 6.5 9[S8])
+ --  True
+(-1.5 * -11.0, APFixed(-1.5, 4, 3) * APFixed(-11.0, 5, 5)) : (16.5, 16.5 9[S8])
+ --  True
+(1.5 * -3.0, APFixed(1.5, 4, 3) * APFixed(-3.0, 5, 5)) : (-4.5, -4.5 9[S8])
+ --  True
+(2.0 * -6.0, APFixed(2.0, 4, 3) * APFixed(-6.0, 5, 5)) : (-12.0, -12.0 9[S8])
+ --  True
+(3.0 * 7.0, APFixed(3.0, 4, 3) * APFixed(7.0, 5, 5)) : (21.0, 21.0 9[S8])
+ --  True
+(3.5 * -5.0, APFixed(3.5, 4, 3) * APFixed(-5.0, 5, 5)) : (-17.5, -17.5 9[S8])
+ --  True
+(2.0 * -14.0, APFixed(2.0, 4, 3) * APFixed(-14.0, 5, 5)) : (-28.0, -28.0 9[S8])
+ --  True
+(3.0 * 15.0, APFixed(3.0, 4, 3) * APFixed(15.0, 5, 5)) : (45.0, 45.0 9[S8])
+ --  True
+(-2.0 * -5.0, APFixed(-2.0, 4, 3) * APFixed(-5.0, 5, 5)) : (10.0, 10.0 9[S8])
+ --  True
+(-2.5 * 11.0, APFixed(-2.5, 4, 3) * APFixed(11.0, 5, 5)) : (-27.5, -27.5 9[S8])
+ --  True
+(1.5 * -1.0, APFixed(1.5, 4, 3) * APFixed(-1.0, 5, 5)) : (-1.5, -1.5 9[S8])
+ --  True
+(3.0 * -1.0, APFixed(3.0, 4, 3) * APFixed(-1.0, 5, 5)) : (-3.0, -3.0 9[S8])
+ --  True
+(3.5 * -10.0, APFixed(3.5, 4, 3) * APFixed(-10.0, 5, 5)) : (-35.0, -35.0 9[S8])
+ --  True
+(2.5 * -5.0, APFixed(2.5, 4, 3) * APFixed(-5.0, 5, 5)) : (-12.5, -12.5 9[S8])
+ --  True
+((-0.5+-1.0j) * (-6.0+-7.0j), APComplex(-0.5+-1.0j, 4, 3) * APComplex(-6.0+-7.0j, 5, 5)) : ((-4+9.5j), (-4+9.5j) 10[S9])
+ --  True
+((2.5+-1.5j) * (-9.0+-3.0j), APComplex(2.5+-1.5j, 4, 3) * APComplex(-9.0+-3.0j, 5, 5)) : ((-27+6j), (-27+6j) 10[S9])
+ --  True
+((-2.0+-0.5j) * (11.0+-8.0j), APComplex(-2.0+-0.5j, 4, 3) * APComplex(11.0+-8.0j, 5, 5)) : ((-26+10.5j), (-26+10.5j) 10[S9])
+ --  True
+((-2.5+1.0j) * (-8.0+-4.0j), APComplex(-2.5+1.0j, 4, 3) * APComplex(-8.0+-4.0j, 5, 5)) : ((24+2j), (24+2j) 10[S9])
+ --  True
+((3.5+-1.5j) * (0.0+2.0j), APComplex(3.5+-1.5j, 4, 3) * APComplex(0.0+2.0j, 5, 5)) : ((3+7j), (3+7j) 10[S9])
+ --  True
+((2.0+1.0j) * (1.0+2.0j), APComplex(2.0+1.0j, 4, 3) * APComplex(1.0+2.0j, 5, 5)) : (5j, 5j 10[S9])
+ --  True
+((-1.0+2.0j) * (7.0+13.0j), APComplex(-1.0+2.0j, 4, 3) * APComplex(7.0+13.0j, 5, 5)) : ((-33+1j), (-33+1j) 10[S9])
+ --  True
+((3.0+-2.0j) * (9.0+-11.0j), APComplex(3.0+-2.0j, 4, 3) * APComplex(9.0+-11.0j, 5, 5)) : ((5-51j), (5-51j) 10[S9])
+ --  True
+((-2.5+-3.0j) * (-4.0+9.0j), APComplex(-2.5+-3.0j, 4, 3) * APComplex(-4.0+9.0j, 5, 5)) : ((37-10.5j), (37-10.5j) 10[S9])
+ --  True
+((0.0+2.0j) * (-13.0+-3.0j), APComplex(0.0+2.0j, 4, 3) * APComplex(-13.0+-3.0j, 5, 5)) : ((6-26j), (6-26j) 10[S9])
+ --  True
+((3.5+-1.0j) * (-13.0+14.0j), APComplex(3.5+-1.0j, 4, 3) * APComplex(-13.0+14.0j, 5, 5)) : ((-31.5+62j), (-31.5+62j) 10[S9])
+ --  True
+((2.0+2.0j) * (4.0+-7.0j), APComplex(2.0+2.0j, 4, 3) * APComplex(4.0+-7.0j, 5, 5)) : ((22-6j), (22-6j) 10[S9])
+ --  True
+((-0.5+0.0j) * (13.0+6.0j), APComplex(-0.5+0.0j, 4, 3) * APComplex(13.0+6.0j, 5, 5)) : ((-6.5-3j), (-6.5-3j) 10[S9])
+ --  True
+((-1.5+-2.0j) * (-13.0+-15.0j), APComplex(-1.5+-2.0j, 4, 3) * APComplex(-13.0+-15.0j, 5, 5)) : ((-10.5+48.5j), (-10.5+48.5j) 10[S9])
+ --  True
+((2.0+-1.5j) * (8.0+-0.0j), APComplex(2.0+-1.5j, 4, 3) * APComplex(8.0+-0.0j, 5, 5)) : ((16-12j), (16-12j) 10[S9])
+ --  True
+((0.5+3.0j) * (-12.0+14.0j), APComplex(0.5+3.0j, 4, 3) * APComplex(-12.0+14.0j, 5, 5)) : ((-48-29j), (-48-29j) 10[S9])
+ --  True
+((-3.0+-2.5j) * (6.0+-7.0j), APComplex(-3.0+-2.5j, 4, 3) * APComplex(6.0+-7.0j, 5, 5)) : ((-35.5+6j), (-35.5+6j) 10[S9])
+ --  True
+((-3.0+-3.5j) * (5.0+-10.0j), APComplex(-3.0+-3.5j, 4, 3) * APComplex(5.0+-10.0j, 5, 5)) : ((-50+12.5j), (-50+12.5j) 10[S9])
+ --  True
+((1.5+2.5j) * (-11.0+5.0j), APComplex(1.5+2.5j, 4, 3) * APComplex(-11.0+5.0j, 5, 5)) : ((-29-20j), (-29-20j) 10[S9])
+ --  True
+((-1.0+-1.5j) * (-2.0+11.0j), APComplex(-1.0+-1.5j, 4, 3) * APComplex(-2.0+11.0j, 5, 5)) : ((18.5-8j), (18.5-8j) 10[S9])
+ --  True
+((0.5+-3.0j) * -5.0, APComplex(0.5+-3.0j, 4, 3) * APFixed(-5.0, 5, 5)) : ((-2.5+15j), (-2.5+15j) 9[S8])
+ --  True
+((-3.0+2.0j) * -5.0, APComplex(-3.0+2.0j, 4, 3) * APFixed(-5.0, 5, 5)) : ((15-10j), (15-10j) 9[S8])
+ --  True
+((3.0+2.5j) * -14.0, APComplex(3.0+2.5j, 4, 3) * APFixed(-14.0, 5, 5)) : ((-42-35j), (-42-35j) 9[S8])
+ --  True
+((1.5+0.5j) * -1.0, APComplex(1.5+0.5j, 4, 3) * APFixed(-1.0, 5, 5)) : ((-1.5-0.5j), (-1.5-0.5j) 9[S8])
+ --  True
+((3.5+0.0j) * -11.0, APComplex(3.5+0.0j, 4, 3) * APFixed(-11.0, 5, 5)) : ((-38.5+0j), (-38.5+0j) 9[S8])
+ --  True
+((-1.5+0.5j) * 0.0, APComplex(-1.5+0.5j, 4, 3) * APFixed(0.0, 5, 5)) : ((-0+0j), 0j 9[S8])
+ --  True
+((1.5+-3.5j) * -7.0, APComplex(1.5+-3.5j, 4, 3) * APFixed(-7.0, 5, 5)) : ((-10.5+24.5j), (-10.5+24.5j) 9[S8])
+ --  True
+((-0.0+0.0j) * 8.0, APComplex(-0.0+0.0j, 4, 3) * APFixed(8.0, 5, 5)) : (0j, 0j 9[S8])
+ --  True
+((0.5+3.0j) * 4.0, APComplex(0.5+3.0j, 4, 3) * APFixed(4.0, 5, 5)) : ((2+12j), (2+12j) 9[S8])
+ --  True
+((3.0+-2.5j) * -10.0, APComplex(3.0+-2.5j, 4, 3) * APFixed(-10.0, 5, 5)) : ((-30+25j), (-30+25j) 9[S8])
+ --  True
+((1.0+-2.0j) * 10.0, APComplex(1.0+-2.0j, 4, 3) * APFixed(10.0, 5, 5)) : ((10-20j), (10-20j) 9[S8])
+ --  True
+((3.5+1.5j) * -14.0, APComplex(3.5+1.5j, 4, 3) * APFixed(-14.0, 5, 5)) : ((-49-21j), (-49-21j) 9[S8])
+ --  True
+((0.0+0.5j) * 4.0, APComplex(0.0+0.5j, 4, 3) * APFixed(4.0, 5, 5)) : (2j, 2j 9[S8])
+ --  True
+((-0.5+2.5j) * 2.0, APComplex(-0.5+2.5j, 4, 3) * APFixed(2.0, 5, 5)) : ((-1+5j), (-1+5j) 9[S8])
+ --  True
+((-3.0+-3.0j) * 2.0, APComplex(-3.0+-3.0j, 4, 3) * APFixed(2.0, 5, 5)) : ((-6-6j), (-6-6j) 9[S8])
+ --  True
+((-0.5+-2.5j) * -12.0, APComplex(-0.5+-2.5j, 4, 3) * APFixed(-12.0, 5, 5)) : ((6+30j), (6+30j) 9[S8])
+ --  True
+((-1.5+-3.0j) * -10.0, APComplex(-1.5+-3.0j, 4, 3) * APFixed(-10.0, 5, 5)) : ((15+30j), (15+30j) 9[S8])
+ --  True
+((-0.5+3.5j) * -13.0, APComplex(-0.5+3.5j, 4, 3) * APFixed(-13.0, 5, 5)) : ((6.5-45.5j), (6.5-45.5j) 9[S8])
+ --  True
+((-3.5+-2.0j) * 8.0, APComplex(-3.5+-2.0j, 4, 3) * APFixed(8.0, 5, 5)) : ((-28-16j), (-28-16j) 9[S8])
+ --  True
+((-3.0+-0.5j) * 12.0, APComplex(-3.0+-0.5j, 4, 3) * APFixed(12.0, 5, 5)) : ((-36-6j), (-36-6j) 9[S8])
+ --  True
+((4.5+1.5j) * (24.0+25.0j), APUcomplex(4.5+1.5j, 4, 3) * APUcomplex(24.0+25.0j, 5, 5)) : ((70.5+148.5j), (70.5+148.5j) 10[U9])
+ --  True
+((1.5+2.5j) * (30.0+19.0j), APUcomplex(1.5+2.5j, 4, 3) * APUcomplex(30.0+19.0j, 5, 5)) : ((-2.5+103.5j), 'Error: Negative result')
+((4.0+1.0j) * (0.0+1.0j), APUcomplex(4.0+1.0j, 4, 3) * APUcomplex(0.0+1.0j, 5, 5)) : ((-1+4j), 'Error: Negative result')
+((3.0+5.0j) * (17.0+15.0j), APUcomplex(3.0+5.0j, 4, 3) * APUcomplex(17.0+15.0j, 5, 5)) : ((-24+130j), 'Error: Negative result')
+((3.0+0.5j) * (8.0+5.0j), APUcomplex(3.0+0.5j, 4, 3) * APUcomplex(8.0+5.0j, 5, 5)) : ((21.5+19j), (21.5+19j) 10[U9])
+ --  True
+((5.0+5.5j) * (15.0+6.0j), APUcomplex(5.0+5.5j, 4, 3) * APUcomplex(15.0+6.0j, 5, 5)) : ((42+112.5j), (42+112.5j) 10[U9])
+ --  True
+((7.0+4.5j) * (21.0+2.0j), APUcomplex(7.0+4.5j, 4, 3) * APUcomplex(21.0+2.0j, 5, 5)) : ((138+108.5j), (138+108.5j) 10[U9])
+ --  True
+((6.5+6.5j) * (21.0+28.0j), APUcomplex(6.5+6.5j, 4, 3) * APUcomplex(21.0+28.0j, 5, 5)) : ((-45.5+318.5j), 'Error: Negative result')
+((1.0+3.5j) * (29.0+19.0j), APUcomplex(1.0+3.5j, 4, 3) * APUcomplex(29.0+19.0j, 5, 5)) : ((-37.5+120.5j), 'Error: Negative result')
+((1.5+1.5j) * (9.0+28.0j), APUcomplex(1.5+1.5j, 4, 3) * APUcomplex(9.0+28.0j, 5, 5)) : ((-28.5+55.5j), 'Error: Negative result')
+((2.5+3.0j) * (5.0+3.0j), APUcomplex(2.5+3.0j, 4, 3) * APUcomplex(5.0+3.0j, 5, 5)) : ((3.5+22.5j), (3.5+22.5j) 10[U9])
+ --  True
+((2.5+0.0j) * (11.0+17.0j), APUcomplex(2.5+0.0j, 4, 3) * APUcomplex(11.0+17.0j, 5, 5)) : ((27.5+42.5j), (27.5+42.5j) 10[U9])
+ --  True
+((5.5+6.5j) * (19.0+3.0j), APUcomplex(5.5+6.5j, 4, 3) * APUcomplex(19.0+3.0j, 5, 5)) : ((85+140j), (85+140j) 10[U9])
+ --  True
+((6.0+1.5j) * (14.0+14.0j), APUcomplex(6.0+1.5j, 4, 3) * APUcomplex(14.0+14.0j, 5, 5)) : ((63+105j), (63+105j) 10[U9])
+ --  True
+((5.0+1.0j) * (10.0+13.0j), APUcomplex(5.0+1.0j, 4, 3) * APUcomplex(10.0+13.0j, 5, 5)) : ((37+75j), (37+75j) 10[U9])
+ --  True
+((2.0+6.0j) * (13.0+8.0j), APUcomplex(2.0+6.0j, 4, 3) * APUcomplex(13.0+8.0j, 5, 5)) : ((-22+94j), 'Error: Negative result')
+((7.0+0.5j) * (19.0+15.0j), APUcomplex(7.0+0.5j, 4, 3) * APUcomplex(19.0+15.0j, 5, 5)) : ((125.5+114.5j), (125.5+114.5j) 10[U9])
+ --  True
+((1.0+2.0j) * (30.0+10.0j), APUcomplex(1.0+2.0j, 4, 3) * APUcomplex(30.0+10.0j, 5, 5)) : ((10+70j), (10+70j) 10[U9])
+ --  True
+((5.5+1.0j) * (2.0+27.0j), APUcomplex(5.5+1.0j, 4, 3) * APUcomplex(2.0+27.0j, 5, 5)) : ((-16+150.5j), 'Error: Negative result')
+((7.0+3.5j) * (19.0+0.0j), APUcomplex(7.0+3.5j, 4, 3) * APUcomplex(19.0+0.0j, 5, 5)) : ((133+66.5j), (133+66.5j) 10[U9])
+ --  True
+((3.5+1.5j) * 24.0, APUcomplex(3.5+1.5j, 4, 3) * APUfixed(24.0, 5, 5)) : ((84+36j), (84+36j) 9[U8])
+ --  True
+((4.5+1.5j) * 30.0, APUcomplex(4.5+1.5j, 4, 3) * APUfixed(30.0, 5, 5)) : ((135+45j), (135+45j) 9[U8])
+ --  True
+((2.0+4.0j) * 14.0, APUcomplex(2.0+4.0j, 4, 3) * APUfixed(14.0, 5, 5)) : ((28+56j), (28+56j) 9[U8])
+ --  True
+((2.0+3.5j) * 1.0, APUcomplex(2.0+3.5j, 4, 3) * APUfixed(1.0, 5, 5)) : ((2+3.5j), (2+3.5j) 9[U8])
+ --  True
+((6.5+3.0j) * 10.0, APUcomplex(6.5+3.0j, 4, 3) * APUfixed(10.0, 5, 5)) : ((65+30j), (65+30j) 9[U8])
+ --  True
+((5.0+1.0j) * 22.0, APUcomplex(5.0+1.0j, 4, 3) * APUfixed(22.0, 5, 5)) : ((110+22j), (110+22j) 9[U8])
+ --  True
+((6.5+4.5j) * 30.0, APUcomplex(6.5+4.5j, 4, 3) * APUfixed(30.0, 5, 5)) : ((195+135j), (195+135j) 9[U8])
+ --  True
+((1.5+3.0j) * 23.0, APUcomplex(1.5+3.0j, 4, 3) * APUfixed(23.0, 5, 5)) : ((34.5+69j), (34.5+69j) 9[U8])
+ --  True
+((3.5+0.5j) * 1.0, APUcomplex(3.5+0.5j, 4, 3) * APUfixed(1.0, 5, 5)) : ((3.5+0.5j), (3.5+0.5j) 9[U8])
+ --  True
+((6.5+7.0j) * 12.0, APUcomplex(6.5+7.0j, 4, 3) * APUfixed(12.0, 5, 5)) : ((78+84j), (78+84j) 9[U8])
+ --  True
+((1.0+0.5j) * 16.0, APUcomplex(1.0+0.5j, 4, 3) * APUfixed(16.0, 5, 5)) : ((16+8j), (16+8j) 9[U8])
+ --  True
+((2.0+6.5j) * 15.0, APUcomplex(2.0+6.5j, 4, 3) * APUfixed(15.0, 5, 5)) : ((30+97.5j), (30+97.5j) 9[U8])
+ --  True
+((0.0+5.0j) * 12.0, APUcomplex(0.0+5.0j, 4, 3) * APUfixed(12.0, 5, 5)) : (60j, 60j 9[U8])
+ --  True
+((3.5+3.5j) * 18.0, APUcomplex(3.5+3.5j, 4, 3) * APUfixed(18.0, 5, 5)) : ((63+63j), (63+63j) 9[U8])
+ --  True
+((5.0+4.5j) * 3.0, APUcomplex(5.0+4.5j, 4, 3) * APUfixed(3.0, 5, 5)) : ((15+13.5j), (15+13.5j) 9[U8])
+ --  True
+((2.0+3.0j) * 23.0, APUcomplex(2.0+3.0j, 4, 3) * APUfixed(23.0, 5, 5)) : ((46+69j), (46+69j) 9[U8])
+ --  True
+((6.0+7.5j) * 7.0, APUcomplex(6.0+7.5j, 4, 3) * APUfixed(7.0, 5, 5)) : ((42+52.5j), (42+52.5j) 9[U8])
+ --  True
+((4.0+2.5j) * 9.0, APUcomplex(4.0+2.5j, 4, 3) * APUfixed(9.0, 5, 5)) : ((36+22.5j), (36+22.5j) 9[U8])
+ --  True
+((3.0+2.5j) * 26.0, APUcomplex(3.0+2.5j, 4, 3) * APUfixed(26.0, 5, 5)) : ((78+65j), (78+65j) 9[U8])
+ --  True
+((6.5+7.5j) * 7.0, APUcomplex(6.5+7.5j, 4, 3) * APUfixed(7.0, 5, 5)) : ((45.5+52.5j), (45.5+52.5j) 9[U8])
+ --  True
+((2.5+2.5j) + (-5.0+0.0j), APComplex(2.5+2.5j, 4, 3) + APComplex(-5.0+0.0j, 5, 5)) : ((-2.5+2.5j), (-2.5+2.5j) 7[S6])
+ --  True
+((1.5+2.5j) + (-5.0+-5.0j), APComplex(1.5+2.5j, 4, 3) + APComplex(-5.0+-5.0j, 5, 5)) : ((-3.5-2.5j), (-3.5-2.5j) 7[S6])
+ --  True
+((-1.0+0.5j) + (9.0+-6.0j), APComplex(-1.0+0.5j, 4, 3) + APComplex(9.0+-6.0j, 5, 5)) : ((8-5.5j), (8-5.5j) 7[S6])
+ --  True
+((-2.5+-2.0j) + (11.0+-10.0j), APComplex(-2.5+-2.0j, 4, 3) + APComplex(11.0+-10.0j, 5, 5)) : ((8.5-12j), (8.5-12j) 7[S6])
+ --  True
+((-0.0+-2.5j) + (-13.0+-9.0j), APComplex(-0.0+-2.5j, 4, 3) + APComplex(-13.0+-9.0j, 5, 5)) : ((-13-11.5j), (-13-11.5j) 7[S6])
+ --  True
+((2.5+0.5j) + (-3.0+-4.0j), APComplex(2.5+0.5j, 4, 3) + APComplex(-3.0+-4.0j, 5, 5)) : ((-0.5-3.5j), (-0.5-3.5j) 7[S6])
+ --  True
+((-3.5+-3.0j) + (-7.0+-13.0j), APComplex(-3.5+-3.0j, 4, 3) + APComplex(-7.0+-13.0j, 5, 5)) : ((-10.5-16j), (-10.5-16j) 7[S6])
+ --  True
+((-1.5+-2.5j) + (6.0+-8.0j), APComplex(-1.5+-2.5j, 4, 3) + APComplex(6.0+-8.0j, 5, 5)) : ((4.5-10.5j), (4.5-10.5j) 7[S6])
+ --  True
+((2.5+-2.5j) + (-9.0+-6.0j), APComplex(2.5+-2.5j, 4, 3) + APComplex(-9.0+-6.0j, 5, 5)) : ((-6.5-8.5j), (-6.5-8.5j) 7[S6])
+ --  True
+((-2.0+-3.0j) + (10.0+-3.0j), APComplex(-2.0+-3.0j, 4, 3) + APComplex(10.0+-3.0j, 5, 5)) : ((8-6j), (8-6j) 7[S6])
+ --  True
+((-0.0+-2.0j) + (2.0+6.0j), APComplex(-0.0+-2.0j, 4, 3) + APComplex(2.0+6.0j, 5, 5)) : ((2+4j), (2+4j) 7[S6])
+ --  True
+((1.0+1.5j) + (4.0+14.0j), APComplex(1.0+1.5j, 4, 3) + APComplex(4.0+14.0j, 5, 5)) : ((5+15.5j), (5+15.5j) 7[S6])
+ --  True
+((3.5+3.5j) + (3.0+-6.0j), APComplex(3.5+3.5j, 4, 3) + APComplex(3.0+-6.0j, 5, 5)) : ((6.5-2.5j), (6.5-2.5j) 7[S6])
+ --  True
+((-3.5+-2.5j) + (14.0+13.0j), APComplex(-3.5+-2.5j, 4, 3) + APComplex(14.0+13.0j, 5, 5)) : ((10.5+10.5j), (10.5+10.5j) 7[S6])
+ --  True
+((-0.5+1.5j) + (-5.0+8.0j), APComplex(-0.5+1.5j, 4, 3) + APComplex(-5.0+8.0j, 5, 5)) : ((-5.5+9.5j), (-5.5+9.5j) 7[S6])
+ --  True
+((0.5+0.5j) + (13.0+7.0j), APComplex(0.5+0.5j, 4, 3) + APComplex(13.0+7.0j, 5, 5)) : ((13.5+7.5j), (13.5+7.5j) 7[S6])
+ --  True
+((-1.5+-1.0j) + (3.0+7.0j), APComplex(-1.5+-1.0j, 4, 3) + APComplex(3.0+7.0j, 5, 5)) : ((1.5+6j), (1.5+6j) 7[S6])
+ --  True
+((2.0+-3.5j) + (-1.0+5.0j), APComplex(2.0+-3.5j, 4, 3) + APComplex(-1.0+5.0j, 5, 5)) : ((1+1.5j), (1+1.5j) 7[S6])
+ --  True
+((1.5+1.0j) + (10.0+-8.0j), APComplex(1.5+1.0j, 4, 3) + APComplex(10.0+-8.0j, 5, 5)) : ((11.5-7j), (11.5-7j) 7[S6])
+ --  True
+((-1.0+-2.5j) + (6.0+-10.0j), APComplex(-1.0+-2.5j, 4, 3) + APComplex(6.0+-10.0j, 5, 5)) : ((5-12.5j), (5-12.5j) 7[S6])
+ --  True
+((3.5+3.0j) - (15.0+-9.0j), APComplex(3.5+3.0j, 4, 3) - APComplex(15.0+-9.0j, 5, 5)) : ((-11.5+12j), (-11.5+12j) 7[S6])
+ --  True
+((2.5+-0.0j) - (-2.0+14.0j), APComplex(2.5+-0.0j, 4, 3) - APComplex(-2.0+14.0j, 5, 5)) : ((4.5-14j), (4.5-14j) 7[S6])
+ --  True
+((-0.5+2.5j) - (5.0+7.0j), APComplex(-0.5+2.5j, 4, 3) - APComplex(5.0+7.0j, 5, 5)) : ((-5.5-4.5j), (-5.5-4.5j) 7[S6])
+ --  True
+((-0.5+1.5j) - (5.0+-2.0j), APComplex(-0.5+1.5j, 4, 3) - APComplex(5.0+-2.0j, 5, 5)) : ((-5.5+3.5j), (-5.5+3.5j) 7[S6])
+ --  True
+((-1.0+1.5j) - (-1.0+10.0j), APComplex(-1.0+1.5j, 4, 3) - APComplex(-1.0+10.0j, 5, 5)) : (-8.5j, -8.5j 7[S6])
+ --  True
+((3.5+-2.5j) - (-13.0+11.0j), APComplex(3.5+-2.5j, 4, 3) - APComplex(-13.0+11.0j, 5, 5)) : ((16.5-13.5j), (16.5-13.5j) 7[S6])
+ --  True
+((0.5+-1.0j) - (-10.0+8.0j), APComplex(0.5+-1.0j, 4, 3) - APComplex(-10.0+8.0j, 5, 5)) : ((10.5-9j), (10.5-9j) 7[S6])
+ --  True
+((-2.0+-2.0j) - (0.0+-2.0j), APComplex(-2.0+-2.0j, 4, 3) - APComplex(0.0+-2.0j, 5, 5)) : ((-2+0j), (-2+0j) 7[S6])
+ --  True
+((1.5+2.5j) - (2.0+-7.0j), APComplex(1.5+2.5j, 4, 3) - APComplex(2.0+-7.0j, 5, 5)) : ((-0.5+9.5j), (-0.5+9.5j) 7[S6])
+ --  True
+((3.0+-2.0j) - (-14.0+5.0j), APComplex(3.0+-2.0j, 4, 3) - APComplex(-14.0+5.0j, 5, 5)) : ((17-7j), (17-7j) 7[S6])
+ --  True
+((-1.5+-3.0j) - (-3.0+15.0j), APComplex(-1.5+-3.0j, 4, 3) - APComplex(-3.0+15.0j, 5, 5)) : ((1.5-18j), (1.5-18j) 7[S6])
+ --  True
+((3.0+-1.5j) - (6.0+2.0j), APComplex(3.0+-1.5j, 4, 3) - APComplex(6.0+2.0j, 5, 5)) : ((-3-3.5j), (-3-3.5j) 7[S6])
+ --  True
+((3.0+2.0j) - (-13.0+12.0j), APComplex(3.0+2.0j, 4, 3) - APComplex(-13.0+12.0j, 5, 5)) : ((16-10j), (16-10j) 7[S6])
+ --  True
+((-0.5+1.5j) - (-3.0+-6.0j), APComplex(-0.5+1.5j, 4, 3) - APComplex(-3.0+-6.0j, 5, 5)) : ((2.5+7.5j), (2.5+7.5j) 7[S6])
+ --  True
+((2.5+-3.0j) - (5.0+-5.0j), APComplex(2.5+-3.0j, 4, 3) - APComplex(5.0+-5.0j, 5, 5)) : ((-2.5+2j), (-2.5+2j) 7[S6])
+ --  True
+((-1.5+3.0j) - (-12.0+10.0j), APComplex(-1.5+3.0j, 4, 3) - APComplex(-12.0+10.0j, 5, 5)) : ((10.5-7j), (10.5-7j) 7[S6])
+ --  True
+((-2.0+0.5j) - (14.0+2.0j), APComplex(-2.0+0.5j, 4, 3) - APComplex(14.0+2.0j, 5, 5)) : ((-16-1.5j), (-16-1.5j) 7[S6])
+ --  True
+((0.5+-2.0j) - (-11.0+7.0j), APComplex(0.5+-2.0j, 4, 3) - APComplex(-11.0+7.0j, 5, 5)) : ((11.5-9j), (11.5-9j) 7[S6])
+ --  True
+((2.5+1.0j) - (8.0+12.0j), APComplex(2.5+1.0j, 4, 3) - APComplex(8.0+12.0j, 5, 5)) : ((-5.5-11j), (-5.5-11j) 7[S6])
+ --  True
+((-1.5+-1.5j) - (-8.0+3.0j), APComplex(-1.5+-1.5j, 4, 3) - APComplex(-8.0+3.0j, 5, 5)) : ((6.5-4.5j), (6.5-4.5j) 7[S6])
+ --  True
+((1.5+1.0j) + -4.0, APComplex(1.5+1.0j, 4, 3) + APFixed(-4.0, 5, 5)) : ((-2.5+1j), (-2.5+1j) 7[S6])
+ --  True
+((0.5+0.5j) + 14.0, APComplex(0.5+0.5j, 4, 3) + APFixed(14.0, 5, 5)) : ((14.5+0.5j), (14.5+0.5j) 7[S6])
+ --  True
+((-2.0+0.0j) + -14.0, APComplex(-2.0+0.0j, 4, 3) + APFixed(-14.0, 5, 5)) : ((-16+0j), (-16+0j) 7[S6])
+ --  True
+((1.0+-2.5j) + 14.0, APComplex(1.0+-2.5j, 4, 3) + APFixed(14.0, 5, 5)) : ((15-2.5j), (15-2.5j) 7[S6])
+ --  True
+((3.0+-3.0j) + 7.0, APComplex(3.0+-3.0j, 4, 3) + APFixed(7.0, 5, 5)) : ((10-3j), (10-3j) 7[S6])
+ --  True
+((1.0+-2.0j) + 11.0, APComplex(1.0+-2.0j, 4, 3) + APFixed(11.0, 5, 5)) : ((12-2j), (12-2j) 7[S6])
+ --  True
+((-0.5+2.5j) + -2.0, APComplex(-0.5+2.5j, 4, 3) + APFixed(-2.0, 5, 5)) : ((-2.5+2.5j), (-2.5+2.5j) 7[S6])
+ --  True
+((2.0+-0.5j) + -11.0, APComplex(2.0+-0.5j, 4, 3) + APFixed(-11.0, 5, 5)) : ((-9-0.5j), (-9-0.5j) 7[S6])
+ --  True
+((-0.5+0.5j) + -14.0, APComplex(-0.5+0.5j, 4, 3) + APFixed(-14.0, 5, 5)) : ((-14.5+0.5j), (-14.5+0.5j) 7[S6])
+ --  True
+((-3.0+-3.5j) + -11.0, APComplex(-3.0+-3.5j, 4, 3) + APFixed(-11.0, 5, 5)) : ((-14-3.5j), (-14-3.5j) 7[S6])
+ --  True
+((0.5+0.0j) + 0.0, APComplex(0.5+0.0j, 4, 3) + APFixed(0.0, 5, 5)) : ((0.5+0j), (0.5+0j) 7[S6])
+ --  True
+((2.0+1.0j) + -5.0, APComplex(2.0+1.0j, 4, 3) + APFixed(-5.0, 5, 5)) : ((-3+1j), (-3+1j) 7[S6])
+ --  True
+((3.5+-1.0j) + 7.0, APComplex(3.5+-1.0j, 4, 3) + APFixed(7.0, 5, 5)) : ((10.5-1j), (10.5-1j) 7[S6])
+ --  True
+((-3.5+-0.5j) + 9.0, APComplex(-3.5+-0.5j, 4, 3) + APFixed(9.0, 5, 5)) : ((5.5-0.5j), (5.5-0.5j) 7[S6])
+ --  True
+((-2.5+-2.0j) + 10.0, APComplex(-2.5+-2.0j, 4, 3) + APFixed(10.0, 5, 5)) : ((7.5-2j), (7.5-2j) 7[S6])
+ --  True
+((-2.5+0.0j) + 11.0, APComplex(-2.5+0.0j, 4, 3) + APFixed(11.0, 5, 5)) : ((8.5+0j), (8.5+0j) 7[S6])
+ --  True
+((0.0+3.5j) + 14.0, APComplex(0.0+3.5j, 4, 3) + APFixed(14.0, 5, 5)) : ((14+3.5j), (14+3.5j) 7[S6])
+ --  True
+((3.0+3.5j) + 13.0, APComplex(3.0+3.5j, 4, 3) + APFixed(13.0, 5, 5)) : ((16+3.5j), (16+3.5j) 7[S6])
+ --  True
+((-0.5+-2.5j) + -4.0, APComplex(-0.5+-2.5j, 4, 3) + APFixed(-4.0, 5, 5)) : ((-4.5-2.5j), (-4.5-2.5j) 7[S6])
+ --  True
+((-1.5+2.5j) + 3.0, APComplex(-1.5+2.5j, 4, 3) + APFixed(3.0, 5, 5)) : ((1.5+2.5j), (1.5+2.5j) 7[S6])
+ --  True
+((5.0+2.5j) + (16.0+11.0j), APUcomplex(5.0+2.5j, 4, 3) + APUcomplex(16.0+11.0j, 5, 5)) : ((21+13.5j), (21+13.5j) 7[U6])
+ --  True
+((1.0+0.5j) + (4.0+11.0j), APUcomplex(1.0+0.5j, 4, 3) + APUcomplex(4.0+11.0j, 5, 5)) : ((5+11.5j), (5+11.5j) 7[U6])
+ --  True
+((1.5+2.5j) + (30.0+3.0j), APUcomplex(1.5+2.5j, 4, 3) + APUcomplex(30.0+3.0j, 5, 5)) : ((31.5+5.5j), (31.5+5.5j) 7[U6])
+ --  True
+((2.5+1.5j) + (4.0+4.0j), APUcomplex(2.5+1.5j, 4, 3) + APUcomplex(4.0+4.0j, 5, 5)) : ((6.5+5.5j), (6.5+5.5j) 7[U6])
+ --  True
+((2.5+0.5j) + (18.0+7.0j), APUcomplex(2.5+0.5j, 4, 3) + APUcomplex(18.0+7.0j, 5, 5)) : ((20.5+7.5j), (20.5+7.5j) 7[U6])
+ --  True
+((4.0+5.5j) + (18.0+15.0j), APUcomplex(4.0+5.5j, 4, 3) + APUcomplex(18.0+15.0j, 5, 5)) : ((22+20.5j), (22+20.5j) 7[U6])
+ --  True
+((6.5+4.0j) + (28.0+11.0j), APUcomplex(6.5+4.0j, 4, 3) + APUcomplex(28.0+11.0j, 5, 5)) : ((34.5+15j), (34.5+15j) 7[U6])
+ --  True
+((7.0+4.5j) + (29.0+21.0j), APUcomplex(7.0+4.5j, 4, 3) + APUcomplex(29.0+21.0j, 5, 5)) : ((36+25.5j), (36+25.5j) 7[U6])
+ --  True
+((7.0+6.5j) + (2.0+11.0j), APUcomplex(7.0+6.5j, 4, 3) + APUcomplex(2.0+11.0j, 5, 5)) : ((9+17.5j), (9+17.5j) 7[U6])
+ --  True
+((6.5+2.0j) + (13.0+17.0j), APUcomplex(6.5+2.0j, 4, 3) + APUcomplex(13.0+17.0j, 5, 5)) : ((19.5+19j), (19.5+19j) 7[U6])
+ --  True
+((7.5+0.5j) + (28.0+12.0j), APUcomplex(7.5+0.5j, 4, 3) + APUcomplex(28.0+12.0j, 5, 5)) : ((35.5+12.5j), (35.5+12.5j) 7[U6])
+ --  True
+((0.5+1.0j) + (28.0+26.0j), APUcomplex(0.5+1.0j, 4, 3) + APUcomplex(28.0+26.0j, 5, 5)) : ((28.5+27j), (28.5+27j) 7[U6])
+ --  True
+((2.5+4.0j) + (15.0+29.0j), APUcomplex(2.5+4.0j, 4, 3) + APUcomplex(15.0+29.0j, 5, 5)) : ((17.5+33j), (17.5+33j) 7[U6])
+ --  True
+((5.0+1.0j) + (9.0+27.0j), APUcomplex(5.0+1.0j, 4, 3) + APUcomplex(9.0+27.0j, 5, 5)) : ((14+28j), (14+28j) 7[U6])
+ --  True
+((5.5+2.5j) + (22.0+29.0j), APUcomplex(5.5+2.5j, 4, 3) + APUcomplex(22.0+29.0j, 5, 5)) : ((27.5+31.5j), (27.5+31.5j) 7[U6])
+ --  True
+((4.5+2.0j) + (5.0+9.0j), APUcomplex(4.5+2.0j, 4, 3) + APUcomplex(5.0+9.0j, 5, 5)) : ((9.5+11j), (9.5+11j) 7[U6])
+ --  True
+((4.0+4.5j) + (15.0+20.0j), APUcomplex(4.0+4.5j, 4, 3) + APUcomplex(15.0+20.0j, 5, 5)) : ((19+24.5j), (19+24.5j) 7[U6])
+ --  True
+((6.0+2.5j) + (30.0+22.0j), APUcomplex(6.0+2.5j, 4, 3) + APUcomplex(30.0+22.0j, 5, 5)) : ((36+24.5j), (36+24.5j) 7[U6])
+ --  True
+((5.0+7.5j) + (5.0+2.0j), APUcomplex(5.0+7.5j, 4, 3) + APUcomplex(5.0+2.0j, 5, 5)) : ((10+9.5j), (10+9.5j) 7[U6])
+ --  True
+((7.5+6.5j) + (12.0+31.0j), APUcomplex(7.5+6.5j, 4, 3) + APUcomplex(12.0+31.0j, 5, 5)) : ((19.5+37.5j), (19.5+37.5j) 7[U6])
+ --  True
+((6.0+1.5j) + 17.0, APUcomplex(6.0+1.5j, 4, 3) + APUfixed(17.0, 5, 5)) : ((23+1.5j), (23+1.5j) 7[U6])
+ --  True
+((3.0+4.5j) + 2.0, APUcomplex(3.0+4.5j, 4, 3) + APUfixed(2.0, 5, 5)) : ((5+4.5j), (5+4.5j) 7[U6])
+ --  True
+((5.0+1.5j) + 13.0, APUcomplex(5.0+1.5j, 4, 3) + APUfixed(13.0, 5, 5)) : ((18+1.5j), (18+1.5j) 7[U6])
+ --  True
+((1.0+0.5j) + 12.0, APUcomplex(1.0+0.5j, 4, 3) + APUfixed(12.0, 5, 5)) : ((13+0.5j), (13+0.5j) 7[U6])
+ --  True
+((3.5+7.5j) + 28.0, APUcomplex(3.5+7.5j, 4, 3) + APUfixed(28.0, 5, 5)) : ((31.5+7.5j), (31.5+7.5j) 7[U6])
+ --  True
+((3.5+3.0j) + 24.0, APUcomplex(3.5+3.0j, 4, 3) + APUfixed(24.0, 5, 5)) : ((27.5+3j), (27.5+3j) 7[U6])
+ --  True
+((0.0+0.0j) + 26.0, APUcomplex(0.0+0.0j, 4, 3) + APUfixed(26.0, 5, 5)) : ((26+0j), (26+0j) 7[U6])
+ --  True
+((4.5+2.5j) + 23.0, APUcomplex(4.5+2.5j, 4, 3) + APUfixed(23.0, 5, 5)) : ((27.5+2.5j), (27.5+2.5j) 7[U6])
+ --  True
+((5.0+5.0j) + 29.0, APUcomplex(5.0+5.0j, 4, 3) + APUfixed(29.0, 5, 5)) : ((34+5j), (34+5j) 7[U6])
+ --  True
+((7.0+6.0j) + 27.0, APUcomplex(7.0+6.0j, 4, 3) + APUfixed(27.0, 5, 5)) : ((34+6j), (34+6j) 7[U6])
+ --  True
+((2.5+7.0j) + 25.0, APUcomplex(2.5+7.0j, 4, 3) + APUfixed(25.0, 5, 5)) : ((27.5+7j), (27.5+7j) 7[U6])
+ --  True
+((4.0+5.0j) + 31.0, APUcomplex(4.0+5.0j, 4, 3) + APUfixed(31.0, 5, 5)) : ((35+5j), (35+5j) 7[U6])
+ --  True
+((5.5+1.0j) + 23.0, APUcomplex(5.5+1.0j, 4, 3) + APUfixed(23.0, 5, 5)) : ((28.5+1j), (28.5+1j) 7[U6])
+ --  True
+((5.5+4.5j) + 3.0, APUcomplex(5.5+4.5j, 4, 3) + APUfixed(3.0, 5, 5)) : ((8.5+4.5j), (8.5+4.5j) 7[U6])
+ --  True
+((5.0+6.0j) + 27.0, APUcomplex(5.0+6.0j, 4, 3) + APUfixed(27.0, 5, 5)) : ((32+6j), (32+6j) 7[U6])
+ --  True
+((7.0+6.5j) + 29.0, APUcomplex(7.0+6.5j, 4, 3) + APUfixed(29.0, 5, 5)) : ((36+6.5j), (36+6.5j) 7[U6])
+ --  True
+((5.5+7.0j) + 7.0, APUcomplex(5.5+7.0j, 4, 3) + APUfixed(7.0, 5, 5)) : ((12.5+7j), (12.5+7j) 7[U6])
+ --  True
+((2.0+4.0j) + 25.0, APUcomplex(2.0+4.0j, 4, 3) + APUfixed(25.0, 5, 5)) : ((27+4j), (27+4j) 7[U6])
+ --  True
+((0.5+3.5j) + 28.0, APUcomplex(0.5+3.5j, 4, 3) + APUfixed(28.0, 5, 5)) : ((28.5+3.5j), (28.5+3.5j) 7[U6])
+ --  True
+((2.5+7.0j) + 8.0, APUcomplex(2.5+7.0j, 4, 3) + APUfixed(8.0, 5, 5)) : ((10.5+7j), (10.5+7j) 7[U6])
+ --  True
+-3.5 7[S5]
+ok

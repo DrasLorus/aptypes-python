@@ -6,4 +6,3 @@ __all__ = [ "APFixed", "APUfixed", "APComplex", "APUcomplex", "real", "complex" 
 
 from .real import APFixed, APUfixed
 from .complex import APComplex, APUcomplex
-

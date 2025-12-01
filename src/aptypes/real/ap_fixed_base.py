@@ -530,7 +530,7 @@ class Base(abc.ABC):
             bits (int): MSB to be truncated
 
         Returns:
-            Base: a trucated version of the object, saturated if the value exceeded
+            Base: a truncated version of the object, saturated if the value exceeded
                 the one achievable after truncation.
         """
         local_width = self.bit_width - bits
